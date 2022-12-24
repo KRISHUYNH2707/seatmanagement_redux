@@ -1,0 +1,92 @@
+body {
+  background: black !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  color: yellow;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+}
+
+.chair {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  &.number {
+    background: transparent;
+    color: yellow;
+  }
+
+  &.booked {
+    background: rgb(92, 92, 92);
+  }
+
+  &.available {
+    background: rgb(236, 236, 236);
+  }
+
+  &.selected {
+    background: yellow;
+  }
+}
+
+.legends {
+
+  margin-top: 30px;
+
+  .seat-square {
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+  
+  }
+
+  .reserved {
+    color: rgb(92, 92, 92);
+  }
+
+  .selected {
+    color: yellow;
+  }
+
+  .available-s {
+    background: rgb(236, 236, 236);
+  }
+
+  .seat-desc {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    
+  }
+}
+
+table,  th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%
+}
+
+th, td {
+  width: 50%;
+}
+
+.seat-info {
+  color: white;
+}
+
+// className="chair booked"
